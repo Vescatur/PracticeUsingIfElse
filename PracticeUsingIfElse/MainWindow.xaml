@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticeUsingIfElse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="140" Width="450">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="changeText" Content="Change the label if checked"  Width="158" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Click="changeText_Click"/>
+        <CheckBox x:Name="enableCheckbox" Content="You sure??" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="labelToChange"  Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" Grid.ColumnSpan="2" />
+
     </Grid>
 </Window>
